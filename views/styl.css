@@ -1,0 +1,53 @@
+.div1{
+    position: absolute;
+    font-size: 12px;
+    top:400px;
+    width: 95%;
+    height:250px;
+   
+    border-color: rgb(59, 47, 6);
+    background-color: rgb(235, 231, 217);
+}
+.lbl{
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+.lbl6{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    color: crimson;
+    font-weight: bold;
+
+}
+.txt{
+    width:22px;
+    font-weight: bold;
+    text-align: center;
+    height: 10px;
+}
+.txt1{
+    width:30px;
+    font-weight: bold;
+    text-align: center;
+    height: 10px;
+}
+.btn{
+    font-size: 10px;
+    text-align: center;
+    background-color: rgb(48, 36, 3);
+    color: rgb(236, 229, 209);
+
+}
+.font1{
+    font-size:11px;
+}
+p{
+    font-size: 12px;
+}
+
+body{
+    font-size: 11px;
+
+}
