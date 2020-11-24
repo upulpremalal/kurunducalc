@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KurunduCalculator</title>
+    <link rel="stylesheet" href="myviews/styl.css">
+    <script src="myviews/cal.js"></script>
+</head>
+<body >
+    <div style="padding-top: 7px;height: 45px;width:100%; border:solid;font-size: 18px;background-color: rgb(15, 34, 4);color: rgb(199, 238, 153);"><center><b>  කුරුඳු වගා කැල්කියුලේටරය</b></center></div>
+    <pre class="lspace">
+  <b>උපදෙස් :-</b>
+
+
+    1. පහත තොරතුරු ඔබගේ වගාවට අදාළව හා 
+
+
+        අද දින පවතින මිළ ගණන් අනුව සම්පූර්ණ කරන්න 
+           
+           
+
+    2. එයට පහතින් ඇති බොත්තම් මත ක්ලික් කිරීමෙන්
+
+
+        අවශ්‍ය ආකාරයට නියමිත තීරයේ තොරතුරු දිස් වේ
+
+
+
+    3. සත්‍ය වශයෙන් ඔබ කරන ලද වියදම් හා ලැබුනු ආදායම් 
+
+
+        වැයවූ තීරයේ සටහන් කර පහළින්ම ඇති බොත්තම් මත
+
+
+        ක්ලික් කරන්න. එවිට ඔබේ වගාවේ 
+
+
+            * ශුද්ධ ආදායම
+
+
+            * නිෂ්පාදන වියදම ගණනය කර ගත හැක.
+    </pre>
+    
+    <center><table style=" background-color: rgb(216, 205, 187);">
+        <tr>
+            <td class="td5">වගා කර ඇති බිම් ප්‍රමාණය :- අක්.</td>
+            <td class="td5"><input class="txt1" type="text" id="ta1" value="1" onkeyup ="caltool()"></td>
+            <td></td>
+            <td class="td5">වගාවේ වයස :- අවු.</td>
+          
+            <td class="td5" id="ta2">
+                <select id="sel" style="width: 50px;">
+                    <option >1</option>
+                    <option >2</option>
+                    <option >3</option>
+                    <option >4</option>
+                    <option >5</option>
+                    <option >6</option>
+                    <option >7</option>
+                    <option >8</option>
+                    <option >9</option>
+                    <option >10</option>
+                    <option >11</option>
+                    <option >12</option>
+                    <option >13</option>
+                    <option >14</option>
+                    <option >15</option>
+                    <option >16</option>
+                    <option >17</option>
+                    <option >18</option>
+                    <option >19</option>
+                    <option >20</option>
+                    <option >21</option>
+                </select>
+            </td>
+        </tr>   
+        <tr>
+            <td class="td5">මූලික මෙවලම් සඳහා වියදම අක්. 1 ක ට :- රු.  </td>
+            <td class="td5"><input class="txt1" type="text" id="ta3" value="3000"></td>  
+            <td></td>
+            <td class="td5">කම්කරු වැටුප දිනකට :- රු.</td>
+            <td class="td5"><input class="txt1" type="text" id="ta4" value="1500"></td>
+        </tr>      
+        <tr>
+            <td class="td5">වියළි කුරුඳු පොතු කි.ග්‍රෑම් 1 ක මිළ :- රු.</td>
+            <td class="td5"><input class="txt1" type="text" id="ta5" value="2200"></td>
+            <td></td>
+            <td class="td5">කුරුඳු කෝටුවක මිළ :- රු.</td>
+            <td class="td5"><input class="txt1" type="text" id="ta6" value="6"></td>
+            
+        </tr>
+        <tr>          
+            <td class="td5">කාබනික පෙහෛාර කියුබ් 1 ක මිළ :- රු.</td>
+            <td class="td5"><input class="txt1" type="text" id="ta7" value="7000"></td>
+            <td></td>
+            <td class="td5">රසායනික පෙහෛාර කි.ග්‍රෑම් 1 ක මිළ :- රු</td>
+            <td class="td5"><input class="txt1" type="text" id="ta8" value="30"></td>
+
+        </tr>
+
+        <tr >          
+            <td class="td5">කුරුඳු පැළයක මිළ :- රු.</td>
+            <td class="td5"><input class="txt1" type="text" id="ta9" value="25"></td>
+            <td></td>
+            <td class="td5">කෘෂි රසායන හා වෙනත් වියදම් සඳහා අක්.1 ක ට :- රු.</td>
+            <td class="td5"><input class="txt1" type="text" id="ta10" value="3000"></td>
+
+        </tr>
+        <tr>  
+            <td class="td5">අස්වනු සැකසීම සඳහා ගෙවන ප්‍රතිශතය (%)</td>
+            <td class="td5"><input class="txt1" type="text" id="ta11" value="50"></td>
+            <td></td>
+            
+            
+        </tr>
+        
+        <tr>  
+            <td><center><button class="btn" onclick="gothis()">මෙම වර්ෂයට අය-වැය</button></center></td>
+            <td></td>
+            <td></td>                                         
+            <td><center><button class="btn" onclick="gotill()">මෙම වර්ෂය දක්වා මුළු අය-වැය</button></center></td>
+            <td></td>
+            
+            
+        </tr>     
+    </table></center>
+    
+    
+
+    
+    <table class="tbl" id="tbl1">
+        <tr style="height: 3px;"></tr>
+        <tr class="trh1">
+            <td class="td1" colspan="5"><b><i>වියදම්</i></b></td>
+        </tr>
+
+        <tr>
+            
+            <td class="tdh"><center>කාර්යය</center></td>
+            <td colspan="2" class="tdh1"><center>නියමිත</center></td>
+            
+            <td colspan="2" class="tdh1"><center>වැය වූ</center></td>           
+            
+        </tr>
+       
+
+       
+
+        <tr class="trh2">
+            <td class="td1"><b><i>ශ්‍රමය සඳහා</i></b></td>
+            <td class="td4"><center>කම්කරු දින</center></td>
+            <td class="td1"><center>ගාස්තු</center></td>
+            <td class="td4"><center>කම්කරු දින</center></td>
+            <td class="td1"><center>ගාස්තු</center></td>
+        </tr>
+        <tr class="tr5">
+            <td class="td2">බිම එළි කිරීම හා මූලික බිම් සකස් කිරීම</td>
+            <td class="td4"><input class="txt2" type="text" id="tb1" disabled></td>
+            <td class="td1"><input class="txt3" type="text" id="tc1" disabled></td>
+            <td class="td4"><input class="txt2" type="text" id="txda1"  onkeyup ="labocost()"></td>
+            <td class="td1"><input class="txt3" type="text" id="txea1" onkeyup ="labocost()"></td>
+        </tr>
+        <tr class="tr5">
+            <td class="td2">පාංශු සංරක්ෂණය</td>
+            <td class="td4"><input class="txt2" type="text" id="tb2" disabled></td>
+            <td class="td1"><input class="txt3" type="text" id="tc2" disabled></td>
+            <td class="td4"><input class="txt2" type="text" id="txda2" onkeyup ="labocost()"></td>
+            <td class="td1"><input class="txt3" type="text" id="txea2" onkeyup ="labocost()"></td>
+        </tr>
+        <tr class="tr5">
+            <td class="td2">වලවල් ලකුණු කිරීම/කැපීම </td>
+            <td class="td4"><input class="txt2" type="text" id="tb3" disabled></td>
+            <td class="td1"><input class="txt3" type="text" id="tc3" disabled></td>
+            <td class="td4"><input class="txt2" type="text" id="txda3" onkeyup ="labocost()"></td>
+            <td class="td1"><input class="txt3" type="text" id="txea3" onkeyup ="labocost()"></td>
+        </tr>
+        <tr class="tr5">
+            <td class="td2">පොහොර යෙදීම, වලවල් පිරවීම</td>
+            <td class="td4"><input class="txt2" type="text" id="tb4" disabled></td>
+            <td class="td1"><input class="txt3" type="text" id="tc4" disabled></td>
+            <td class="td4"><input class="txt2" type="text" id="txda4" onkeyup ="labocost()"></td>
+            <td class="td1"><input class="txt3" type="text" id="txea4" onkeyup ="labocost()"></td>
+        </tr>
+        <tr class="tr5">
+            <td class="td2">පැල සිටුවීම</td>
+            <td class="td4"><input class="txt2" type="text" id="tb5" disabled></td>
+            <td class="td1"><input class="txt3" type="text" id="tc5" disabled></td>
+            <td class="td4"><input class="txt2" type="text" id="txda5" onkeyup ="labocost()"></td>
+            <td class="td1"><input class="txt3" type="text" id="txea5" onkeyup ="labocost()"></td>
+        </tr>
+        <tr class="tr5">
+            <td class="td2">වසුන් යෙදීම හා තාවකාලික සෙවන සැපයීම</td>
+            <td class="td4"><input class="txt2" type="text" id="tb6" disabled></td>
+            <td class="td1"><input class="txt3" type="text" id="tc6" disabled></td>
+            <td class="td4"><input class="txt2" type="text" id="txda6" onkeyup ="labocost()"></td>
+            <td class="td1"><input class="txt3" type="text" id="txea6" onkeyup ="labocost()"></td>
+        </tr>
+        <tr class="tr5">
+            <td class="td2">පසු විපරමි හා පාළු සිටුවීම</td>
+            <td class="td4"><input class="txt2" type="text" id="tb7" disabled></td>
+            <td class="td1"><input class="txt3" type="text" id="tc7" disabled></td>
+            <td class="td4"><input class="txt2" type="text" id="txda7" onkeyup ="labocost()"></td>
+            <td class="td1"><input class="txt3" type="text" id="txea7" onkeyup ="labocost()"></td>
+        </tr>
+        <tr class="tr5">
+            <td class="td2">වල් මර්දනය</td>
+            <td class="td4"><input class="txt2" type="text" id="tb8" disabled></td>
+            <td class="td1"><input class="txt3" type="text" id="tc8" disabled></td>
+            <td class="td4"><input class="txt2" type="text" id="txda8" onkeyup ="labocost()"></td>
+            <td class="td1"><input class="txt3" type="text" id="txea8" onkeyup ="labocost()"></td>
+        </tr>
+        <tr class="tr5">
+            <td class="td2">පොහොර යෙදීම</td>
+            <td class="td4"><input class="txt2" type="text" id="tb9" disabled></td>
+            <td class="td1"><input class="txt3" type="text" id="tc9" disabled></td>
+            <td class="td4"><input class="txt2" type="text" id="txda9" onkeyup ="labocost()"></td>
+            <td class="td1"><input class="txt3" type="text" id="txea9" onkeyup ="labocost()"></td>
+        </tr>
+        <tr class="tr5">
+            <td class="td2">පැල කප්පාදුව/පඳුරු පිරිසිදු කිරීම/පඳුරු වටා පස් එකතු කිරීම</td>
+            <td class="td4"><input class="txt2" type="text" id="tb10" disabled></td>
+            <td class="td1"><input class="txt3" type="text" id="tc10" disabled></td>
+            <td class="td4"><input class="txt2" type="text" id="txda10" onkeyup ="labocost()"></td>
+            <td class="td1"><input class="txt3" type="text" id="txea10" onkeyup ="labocost()"></td>
+        </tr>
+        <tr class="tr5">
+            <td class="td2">රෝග/ කෘමි මර්දනය</td>
+            <td class="td4"><input class="txt2" type="text" id="tb11" disabled></td>
+            <td class="td1"><input class="txt3" type="text" id="tc11" disabled></td>
+            <td class="td4"><input class="txt2" type="text" id="txda11" onkeyup ="labocost()"></td>
+            <td class="td1"><input class="txt3" type="text" id="txea11" onkeyup ="labocost()"></td>
+        </tr>
+        <tr class="tr5">
+            <td class="td2">වෙනත් ක්‍රියාකාරකම්</td>
+            <td class="td4"><input class="txt2" type="text" id="tb12" disabled></td>
+            <td class="td1"><input class="txt3" type="text" id="tc12" disabled></td>
+            <td class="td4"><input class="txt2" type="text" id="txda12" onkeyup ="labocost()"></td>
+            <td class="td1"><input class="txt3" type="text" id="txea12" onkeyup ="labocost()"></td>
+        </tr>
+        <tr class="trh4">
+            <td class="td3"><b><i>ශ්‍රමය සඳහා වියදම් එකතුව</i></b></td>
+            <td class="td4"><input class="txt5" type="text" id="tb13" disabled ></td>
+            <td class="td1"><input class="txt4" type="text" id="tc13" disabled></td>
+            <td class="td4"><input class="txt5" type="text" id="txda13"></td>
+            <td class="td1"><input class="txt4" type="text" id="txea13"></td>
+        </tr>
+        
+      
+        <tr>
+           
+            <td class="tdh"><center>කාර්යය</center></td>
+            <td colspan="2" class="tdh1"><center>නියමිත</center></td>
+            
+            <td colspan="2" class="tdh1"><center>වැය වූ</center></td>           
+            
+        </tr>
+
+        <tr class="trh2">
+            <td class="td1"><b><i>යෙදවුම් සඳහා</i></b></td>
+            <td class="td4"><b><i>ප්‍රමාණය</i></b></td>
+            <td class="td1"><b><i><center>මිළ</center></i></b></td>
+            <td class="td4"><b><i>ප්‍රමාණය</i></b></td>
+            <td class="td1"><b><i><center>මිළ</center></i></b></td>
+        </tr>
+        <tr class="tr5">
+            <td class="td2">මූලික මෙවලම් සඳහා </td>
+            <td class="td4"><input class="txt2" type="text" id="tba1" style="visibility: hidden;"></td>
+            <td class="td1"><input class="txt3" type="text" id="tca1" disabled></td>
+            <td class="td4"><input class="txt2" type="text" id="txdb1" style="visibility: hidden;"></td>
+            <td class="td1"><input class="txt3" type="text" id="txeb1" onkeyup="inpucost()"></td>
+        </tr>
+        <tr class="tr5">
+            <td class="td2">කාබනික පොහොර (කියුබ්)</td>
+            <td class="td4"><input class="txt2" type="text" id="tba2" disabled></td>
+            <td class="td1"><input class="txt3" type="text" id="tca2" disabled></td>
+            <td class="td4"><input class="txt2" type="text" id="txdb2" onkeyup="inpucost()"></td>
+            <td class="td1"><input class="txt3" type="text" id="txeb2" onkeyup="inpucost()"></td>
+        </tr>
+        
+        <tr class="tr5">
+            <td class="td2"> කුරුඳු පැල සංඛ්‍යාව </td>
+            <td class="td4"><input class="txt2" type="text" id="tba3" disabled></td>
+            <td class="td1"><input class="txt3" type="text" id="tca3" disabled></td>
+            <td class="td4"><input class="txt2" type="text" id="txdb3" onkeyup="inpucost()"></td>
+            <td class="td1"><input class="txt3" type="text" id="txeb3" onkeyup="inpucost()"></td>
+        </tr>
+        
+        <tr class="tr5">
+            <td class="td2">පොහොර මිශ්‍රණය (කි.ග්‍රෑම්)</td>
+            <td class="td4"><input class="txt2" type="text" id="tba4" disabled></td>
+            <td class="td1"><input class="txt3" type="text" id="tca4" disabled></td>
+            <td class="td4"><input class="txt2" type="text" id="txdb4" onkeyup="inpucost()"></td>
+            <td class="td1"><input class="txt3" type="text" id="txeb4" onkeyup="inpucost()"></td>
+        </tr>
+        
+        <tr class="tr5">
+            <td class="td2">කෘෂි රසායන හා වෙනත් වියදම් </td>
+            <td class="td4"><input class="txt2" type="text" id="tba5" style="visibility: hidden;"></td>
+            <td class="td1"><input class="txt3" type="text" id="tca5" disabled></td>
+            <td class="td4"><input class="txt2" type="text" id="txdb5" style="visibility: hidden;"></td>
+            <td class="td1"><input class="txt3" type="text" id="txeb5" onkeyup="inpucost()"></td>
+        </tr>
+
+        
+        <tr class="trh4">
+            <td class="td3"><b><i>යෙදවුම් සඳහා වියදම එකතුව (රු.)</i></b></td>
+            <td class="td4"><input class="txt2" type="text" id="tba6" style="visibility:hidden;"></td>
+            <td class="td1"><input class="txt4" type="text" id="tca6" disabled></td>
+            <td class="td4"><input class="txt2" type="text" id="txdb6" style="visibility: hidden;"></td>
+            <td class="td1"><input class="txt4" type="text" id="txeb6"></td>
+        </tr>
+
+        <tr class="trh3">
+            <td class="td3"><b><i>නඩත්තු වියදම් (රු.)</i></b></td>
+            <td class="td4"></td>
+            <td class="td1"><input class="txt4" type="text" id="tca7" disabled></td>
+            <td class="td4"></td>
+            <td class="td1"><input class="txt4" type="text" id="txeb7"></td>
+        </tr>
+        <tr class="trh3">
+            <td class="td3">කුරුඳු තැලීමේ වියදම් (රු.) </td>
+            <td class="td4"></td>
+            <td class="td1"><input class="txt4" type="text" id="tcb1" disabled></td>
+            <td class="td4"></td>
+            <td class="td1"><input class="txt4" type="text" id="txec1"></td>
+        </tr>
+        <tr class="trh1">
+            <td class="td3"><b><i>සමස්ථ  වියදම (රු.)</i></b></td>
+            <td class="td4"></td>
+            <td class="td1"><input class="txt4" type="text" id="tcb2" disabled></td>
+            <td class="td4"></td>
+            <td class="td1"><input class="txt4" type="text" id="txec2" disabled></td>
+        </tr>
+        <tr style="height: 3px;"></tr>
+        <tr class="trh5">
+            <td class="td1" colspan="5"><b><i>ආදායම්</i></b></td>
+        </tr>
+        <tr>           
+            <td class="tdh"><center>කාර්යය</center></td>
+            <td colspan="2" class="tdh1"><center>නියමිත</center></td>
+            
+            <td colspan="2" class="tdh1"><center>වැය වූ</center></td>           
+            
+        </tr>
+
+        <tr class="trh5">
+            <td class="td1"><b><i></i></b></td>
+            <td class="td4"><b><i>ප්‍රමාණය</i></b></td>
+            <td class="td1"><b><i><center>මිළ</center></i></b></td>
+            <td class="td4"><b><i>ප්‍රමාණය</i></b></td>
+            <td class="td1"><b><i><center>මිළ</center></i></b></td>
+        </tr>
+
+      
+        <tr class="trh7">
+            <td class="td2">අස්වැන්න ලබා දෙන කුරුඳු පඳුරු සංඛ්‍යාව</td>
+            <td class="td4"><input class="txt2" type="text" id="tbc1" disabled></td>
+            <td class="td1"></td>
+            <td class="td4"><input class="txt2" type="text" id="txdc1"></td>
+            <td class="td1"></td>
+        </tr>
+       
+        <tr class="trh7">
+            <td class="td2">කුරුඳු පොතු අස්වැන්න (කි.ග්‍රෑමි) </td>
+            <td class="td4"><input class="txt2" type="text" id="tbc2" disabled></td>
+            <td class="td1"></td>
+            <td class="td4"><input class="txt2" type="text" id="txdc2"></td>
+            <td class="td1"></td>
+        </tr>
+        <tr class="trh7">
+            <td class="td2"> කුරුඳු පොතු අලෙවියෙන් ලැබෙන ආදායම (රු.) </td>
+            <td class="td4"></td>
+            <td class="td1"><input class="txt3" type="text" id="tcc3" disabled></td>
+            <td class="td4"></td>
+            <td class="td1"><input class="txt3" type="text" id="txeec1" onkeyup="incom()"></td>
+        </tr>
+        <tr class="trh7">
+            <td class="td2">කුරුඳු කෝටු සංඛ්‍යාව </td>
+            <td class="td4"><input class="txt2" type="text" id="tbc3" disabled></td>
+            <td class="td1"></td>
+            <td class="td4"><input class="txt2" type="text" id="txdc3"></td>
+            <td class="td1"></td> 
+        </tr>
+        <tr class="trh7">
+            <td class="td2"> කුරුඳු කෝටු අලෙවියෙන් ලැබෙන ආදායම (රු.) </td>
+            <td class="td4"></td>
+            <td class="td1"><input class="txt3" type="text" id="tcc4" disabled></td>
+            <td class="td4"></td>
+            <td class="td1"><input class="txt3" type="text" id="txeec2" onkeyup="incom()"></td>
+        </tr>
+        <tr style="height: 3px;"></tr>
+        <tr class="trh5">
+            <td class="td3"><b><i>මුළු ආදායම (රු.)</i></b></td>
+            <td class="td4"></td>
+            <td class="td1"><input class="txt4" type="text" id="tcc5" disabled></td>
+            <td class="td4"></td>
+            <td class="td1"><input class="txt4" type="text" id="txeec6"></td>
+        </tr>
+        <tr class="trh6">
+            <td class="td3" id="nein"><b><i>ශුද්ධ ආදායම (රු.)</i></b></td>
+            <td class="td4"></td>
+            <td class="td1"><input class="txt4" type="text" id="tcc6" disabled></td>
+            <td class="td4"></td>
+            <td class="td1"><input class="txt4" type="text" id="txeec7"></td>
+        </tr>
+        <tr class="trh6">
+            <td class="td3" id="neco"><b><i>නිෂ්පාදන වියදම (රු.)</i></b></td>
+            <td class="td4"></td>
+            <td class="td1"><input class="txt4" type="text" id="tcc7" disabled></td>
+            <td class="td4"></td>
+            <td class="td1"><input class="txt4" type="text" id="txeec8"></td>
+        </tr>
+               
+    </table>
+   
+   <button class="btn"  onclick="netincom()"> ශුද්ධ ආදායම</button><button class="btn"  onclick="procost()"> නිෂ්පාදන වියදම</button>
+    
+    
+</body>
+</html> 

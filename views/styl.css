@@ -1,7 +1,7 @@
 .div1{
     position: absolute;
     font-size: 12px;
-    top:400px;
+   
     width: 95%;
     height:250px;
    
@@ -12,6 +12,7 @@
     position: relative;
     top: 10px;
     left: 10px;
+    
 }
 .lbl6{
     position: relative;
@@ -22,22 +23,57 @@
 
 }
 .txt{
-    width:22px;
+    width:25px;
     font-weight: bold;
     text-align: center;
     height: 10px;
 }
 .txt1{
-    width:30px;
-    font-weight: bold;
+    width:40px;
+    font-family: 'Times New Roman', Times, serif;
     text-align: center;
     height: 10px;
 }
+.txt2{    
+    width: 62px;
+    border-width: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: right;
+    background-color: transparent;   
+     
+}
+.txt5{    
+    width: 62px;
+    border-width: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: right;
+    background-color: transparent;   
+    color: white;
+}
+
+.txt3{    
+    width: 82px;
+    border-width: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: right;
+    background-color: transparent;    
+}
+.txt4{
+    width: 82px;
+    border-width: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: right;
+    background-color: transparent;
+    color: white;
+    
+    
+}
 .btn{
-    font-size: 10px;
+    font-size: 12px;
     text-align: center;
     background-color: rgb(48, 36, 3);
     color: rgb(236, 229, 209);
+    border-radius: 10px;
 
 }
 .font1{
@@ -50,4 +86,128 @@ p{
 body{
     font-size: 11px;
 
+}
+
+.tbl{
+    column-width: auto;
+    border: solid;
+    border-width: 0px;
+    background-color: rgb(247, 248, 245);
+}
+
+.tdh{
+    width: 80%;
+    height: 20px;
+    border: solid;
+    border-width: 0px;
+    background-color: rgb(56, 51, 5);
+    color: rgb(238, 238, 176);    
+}
+.tdh1{  
+    column-width: 42px; 
+    border: solid;
+    height: 20px;
+    border-width: 0px;
+    background-color: rgb(56, 51, 5);
+    color: rgb(238, 238, 176);    
+}
+.td1{
+    column-width: 82px;
+    border: solid;
+    border-width: 0px;
+    border-color: white;  
+    padding-right: 3px; 
+}
+.td2{
+    column-width: auto;
+    border: solid;
+    border-width: 0px;
+    padding-left: 15px;   
+    border-color: white;    
+}
+.td3{
+    column-width: auto;
+    border: solid;
+    border-width: 0px;
+    border-color: white;   
+    text-align:right;
+    padding-right: 15px;   
+}
+.td4{
+    column-width: 62px;
+    border: solid;
+    border-width: 0px;
+    border-color: white;  
+    padding-right: 3px; 
+}
+     
+.td5{
+    padding-left: 3px; 
+    border:solid;
+    border-width: 1px;
+    border-color: white;
+}
+
+
+.tr1{
+    background-color: rgb(99, 93, 89);
+    color: rgb(20, 15, 1);
+    height: 20px;
+}
+.tr2{
+    background-color: rgb(43, 19, 3);
+    color: rgb(241, 215, 190);
+    height: 20px;
+}
+.tr3{
+    background-color: rgb(63, 42, 28);
+    color: rgb(241, 215, 190);
+    height: 20px; 
+}
+.trh1{
+    background-color: rgb(4, 48, 3);
+    color: rgb(189, 246, 192);
+    height: 20px;
+}
+.trh2{
+    background-color: rgb(5, 85, 3);
+    color: rgb(202, 248, 204);
+    height: 20px;
+}
+.trh3{
+    background-color: rgb(5, 90, 3);
+    color: rgb(202, 250, 204);
+    height: 20px;
+}
+.trh4{
+    background-color: rgb(5, 150, 3);
+    color: rgb(202, 252, 204);
+    height: 20px;
+}
+.tr5{
+    background-color: rgb(176, 243, 176);
+    color: rgb(1, 22, 1);
+    height: 20px;
+}
+.trh5{
+    background-color: rgb(10, 28, 56);
+    color: rgb(190, 198, 245);
+    height: 20px;
+}
+.trh6{
+    background-color: rgb(2, 14, 32);
+    color: rgb(190, 198, 245);
+    height: 20px;
+}
+.trh7{
+    background-color: rgb(193, 212, 241);
+    color: rgb(3, 9, 43);
+    height: 20px;
+}
+tr{
+    
+    height: 20px;
+}
+.lspace{
+    line-height: 0.5;
 }
