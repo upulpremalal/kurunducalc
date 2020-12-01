@@ -408,7 +408,9 @@ function gotill(){//මෙම වර්ෂය දක්වා මුලු අ�
        vbc[f]=haverst[f-1][va2-1];
      
       //document.getElementById("tbc"+f).value=vbc[f]*va1;
-      document.getElementById("tbc2").value=(vbc[1]*vbc[2]*va1).toFixed(2);
+      document.getElementById("tbc1").value=(vbc[1]*va1).toFixed(0);//අස්වැන්න ලබා දෙන පඳුරු සංඛ්‍යාව
+      document.getElementById("tbc2").value=(vbc[1]*vbc[2]*va1).toFixed(2);//කුරුඳු පොතු අස්වැන්න      
+      document.getElementById("tbc3").value=(vbc[3]*va1).toFixed(0);//කුරුඳු කෝටු සංඛ්‍යාව
       document.getElementById("tcc3").value=(vbc[1]*vbc[2]*va5*va1).toFixed(2);
       document.getElementById("tcc4").value=(vbc[3]*va6*va1).toFixed(2);
       document.getElementById("tcb1").value=(vbc[1]*vbc[2]*va5*va1*va11/100).toFixed(2);
