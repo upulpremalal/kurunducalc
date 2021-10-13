@@ -71,10 +71,24 @@
 .btn{
     font-size: 12px;
     text-align: center;
-    background-color: rgb(48, 36, 3);
+   /*background-color: rgb(48, 36, 3);*/
     color: rgb(236, 229, 209);
     border-radius: 10px;
+    box-shadow: 0 5px #999;
+}
+#btn1{
+    background-color: rgb(31, 9, 82);
+}
 
+#btn2{
+    background-color: rgb(98, 7, 27);
+}
+
+
+.btn:active {
+    background-color: #3e8e88;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
 }
 .font1{
     font-size:11px;
